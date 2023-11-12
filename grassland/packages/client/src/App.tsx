@@ -4,6 +4,7 @@ import { useMUD } from "./MUDContext";
 export const App = () => {
   const {
     network: { useStore, tables },
+    systemCalls: { move },
   } = useMUD();
 
   const tiles = useStore((store) => {
@@ -14,5 +15,5 @@ export const App = () => {
     }));
   });
 
-  return <GameMap width={16} height={16} tiles={tiles} />;
+  return <GameMap width={16} height={16} tiles={tiles} onTileClick={move} />;
 };
