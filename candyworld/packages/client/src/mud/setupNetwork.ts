@@ -8,8 +8,11 @@ import { createFaucetService } from "@latticexyz/services/faucet";
 import { syncToZustand } from "@latticexyz/store-sync/zustand";
 import { getNetworkConfig } from "./getNetworkConfig";
 import IWorldAbi from "contracts/out/IWorld.sol/IWorld.abi.json";
+import IGrasslandAbi from "@grassland/packages/contracts/out/IWorld.sol/IWorld.abi.json";
 import { createBurnerAccount, getContract, transportObserver, ContractWrite } from "@latticexyz/common";
 import { Subject, share } from "rxjs";
+import grasslandConfig from "@grassland/packages/contracts/mud.config";
+import { resolveConfig } from "@latticexyz/store";
 
 /*
  * Import our MUD config, which includes strong types for
@@ -33,7 +36,7 @@ export async function setupNetwork() {
   const clientOptions = {
     chain: networkConfig.chain,
     transport: transportObserver(fallback([webSocket(), http()])),
-    pollingInterval: 1000,
+    pollingInterval: 500,
   } as const satisfies ClientConfig;
 
   const publicClient = createPublicClient(clientOptions);
@@ -59,7 +62,7 @@ export async function setupNetwork() {
    */
   const worldContract = getContract({
     address: networkConfig.worldAddress as Hex,
-    abi: IWorldAbi,
+    abi: [...IWorldAbi, ...IGrasslandAbi] as const,
     publicClient,
     walletClient: burnerWalletClient,
     onWrite: (write) => write$.next(write),
@@ -73,6 +76,7 @@ export async function setupNetwork() {
    */
   const { tables, useStore, latestBlock$, storedBlockLogs$, waitForTransaction } = await syncToZustand({
     config: mudConfig,
+    tables: resolveConfig(grasslandConfig).tables,
     address: networkConfig.worldAddress as Hex,
     publicClient,
     startBlock: BigInt(networkConfig.initialBlockNumber),

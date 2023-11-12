@@ -11,18 +11,22 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
+    "@grassland": "../../../grassland",
     "@latticexyz/common": "2.0.0-next.14",
     "@latticexyz/dev-tools": "2.0.0-next.14",
     "@latticexyz/react": "2.0.0-next.14",
     "@latticexyz/schema-type": "2.0.0-next.14",
     "@latticexyz/services": "2.0.0-next.14",
+    "@latticexyz/store": "2.0.0-next.14",
     "@latticexyz/store-sync": "2.0.0-next.14",
     "@latticexyz/utils": "2.0.0-next.14",
     "@latticexyz/world": "2.0.0-next.14",
+    "autoprefixer": "^10.4.16",
     "contracts": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "7.5.5",
+    "tailwind-merge": "^2.0.0",
     "viem": "1.14.0"
   },
   "devDependencies": {
@@ -31,6 +35,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "vite": "^4.2.1",
     "wait-port": "^1.0.4"
   }

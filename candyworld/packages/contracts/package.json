@@ -8,9 +8,9 @@
     "build:abi": "forge build",
     "build:abi-ts": "mud abi-ts",
     "build:mud": "rimraf src/codegen && mud tablegen && mud worldgen",
-    "deploy:local": "pnpm run build && mud deploy",
-    "deploy:testnet": "pnpm run build && mud deploy --profile=lattice-testnet",
-    "dev": "pnpm mud dev-contracts",
+    "deploy:local": "pnpm run build && mud deploy --worldAddress 0x6e9474e9c83676b9a71133ff96db43e7aa0a4342 --alwaysRunPostDeploy",
+    "deploy:redstone": "pnpm run build && mud deploy --profile=redstone-holesky",
+    "dev": "pnpm mud dev-contracts --rpc http://127.0.0.1:8545 --worldAddress 0x6e9474e9c83676b9a71133ff96db43e7aa0a4342",
     "lint": "pnpm run prettier && pnpm run solhint",
     "prettier": "prettier --write 'src/**/*.sol'",
     "solhint": "solhint --config ./.solhint.json 'src/**/*.sol' --fix",
@@ -21,7 +21,8 @@
     "@latticexyz/schema-type": "2.0.0-next.14",
     "@latticexyz/store": "2.0.0-next.14",
     "@latticexyz/world": "2.0.0-next.14",
-    "@latticexyz/world-modules": "2.0.0-next.14"
+    "@latticexyz/world-modules": "2.0.0-next.14",
+    "@grassland": "../../../grassland"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
