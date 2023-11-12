@@ -7,6 +7,13 @@ import { SetupNetworkResult } from "./setupNetwork";
 
 export type SystemCalls = ReturnType<typeof createSystemCalls>;
 
-export function createSystemCalls(setup: SetupNetworkResult) {
-  return {};
+export function createSystemCalls({
+  worldContract,
+  waitForTransaction,
+}: SetupNetworkResult) {
+  async function move(x: number, y: number) {
+    const tx = await worldContract.write.grassland_MoveSystem_move([x, y]);
+    await waitForTransaction(tx);
+  }
+  return { move };
 }
