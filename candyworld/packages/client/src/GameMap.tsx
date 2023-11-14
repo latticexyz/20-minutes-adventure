@@ -8,7 +8,9 @@ type Props = {
     x: number;
     y: number;
     emoji: string;
+    health?: number;
   }[];
+  killStreak: number;
 };
 
 export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
@@ -19,7 +21,7 @@ export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
     <div className="inline-grid p-2 bg-lime-500 relative overflow-hidden">
       {rows.map((y) =>
         columns.map((x) => {
-          const tile = tiles?.find((t) => t.x === x && t.y === y)?.emoji;
+          const tile = tiles?.find((t) => t.x === x && t.y === y);
 
           return (
             <div
@@ -38,8 +40,10 @@ export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
             >
               <div className="flex flex-wrap gap-1 items-center justify-center relative">
                 {tile ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-3xl pointer-events-none bg-green-800">
-                    {tile}
+                  <div>
+                    <div className="absolute inset-0 flex items-center justify-center text-3xl pointer-events-none bg-green-800">
+                      {tile.emoji}
+                    </div>
                   </div>
                 ) : null}
               </div>
