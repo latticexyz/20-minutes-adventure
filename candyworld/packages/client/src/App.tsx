@@ -11,10 +11,11 @@ export const App = () => {
     const players = Object.values(store.getRecords(tables.Position)).map((record) => {
       const player = record.key.player
       const health = store.getValue(tables.Health, { player })
+      const killStreak = store.getValue(tables.KillStreak, { player })?.value ?? 0
       return {
         x: record.value.x,
         y: record.value.y,
-        emoji: health?.value ? "👩‍🚀" : "👩‍🔬",
+        emoji: killStreak > 5 ? "🧞‍♀️" : killStreak > 2 ? "🧛‍♀️" : health?.value ? "👩‍🚀" : "👩‍🔬",
         health: health?.value,
       }
     });
