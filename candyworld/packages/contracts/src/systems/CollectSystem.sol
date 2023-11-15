@@ -28,24 +28,21 @@ contract CollectSystem is System {
     } else {
       Health.set(player, Health.get(player) + 1);
     }
-  }
-}
 
-
-
-/*
-
-uint256 singleRandom = predictableRandom(16 * 16);
+    // try to respawn candy
+    uint32 singleRandom = uint32(predictableRandom(16 * 16));
     uint256 i = 0;
     while (true) {
       if (i >= 32) {
-        revert("unable to find an unobstructed area to spawn in");
+        // unable to find an area without candy to respawn candy
+        return;
       }
-      if (Obstruction.get(x, y)) {
+      uint32 randomX = singleRandom / 16;
+      uint32 randomY = singleRandom % 16;
+      if (CandyPosition.get(randomX, randomY)) {
         i += 1;
       } else {
-        Position.set(player, x, y);
-        Obstruction.set(x, y, true);
+        CandyPosition.set(randomX, randomY, true);
         break;
       }
     }
@@ -55,6 +52,3 @@ uint256 singleRandom = predictableRandom(16 * 16);
 function predictableRandom(uint256 max) view returns (uint256) {
   return uint256(keccak256(abi.encodePacked(blockhash(block.number - 1), gasleft()))) % max;
 }
-
-
-*/
