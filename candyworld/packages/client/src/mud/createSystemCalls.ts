@@ -42,7 +42,7 @@ export function createSystemCalls({
 
       if (defender) {
         const defenderAddress = toEthAddress(defender) as Hex;
-        if (defenderAddress === player) return;
+        if (defenderAddress.toLowerCase() === player.toLowerCase()) return;
 
         const tx = await worldContract.write.candyworld_AttackSystem_attack([defenderAddress]);
         await waitForTransaction(tx);

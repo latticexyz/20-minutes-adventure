@@ -13,6 +13,21 @@ type Props = {
   killStreak: number;
 };
 
+const HealthBar = ({ currentHealth, maxHealth }: { currentHealth: number, maxHealth: number }) => {
+  const healthPercentage = (currentHealth / maxHealth) * 100;
+
+  return (
+    <div className="absolute top-0 flex items-center mb-4">
+      <div className="h-1 bg-gray-300 w-8 z-10">
+        <div
+          className="h-1 bg-red-500 transition-all duration-500 ease-in-out"
+          style={{ width: `${healthPercentage}%` }}
+        ></div>
+      </div>
+    </div>
+  );
+};
+
 export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
   const rows = new Array(width).fill(0).map((_, i) => i);
   const columns = new Array(height).fill(0).map((_, i) => i);
@@ -27,7 +42,7 @@ export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
             <div
               key={`${x},${y}`}
               className={twMerge(
-                "w-8 h-8 flex items-center justify-center",
+                "relative w-8 h-8 flex items-center justify-center",
                 onTileClick ? "cursor-pointer hover:ring" : null
               )}
               style={{
@@ -38,6 +53,7 @@ export const GameMap = ({ width, height, onTileClick, tiles }: Props) => {
                 onTileClick?.(x, y);
               }}
             >
+              { tile?.health ? <HealthBar currentHealth={tile.health} maxHealth={4} /> : <></> }
               <div className="flex flex-wrap gap-1 items-center justify-center relative">
                 {tile ? (
                   <div>
