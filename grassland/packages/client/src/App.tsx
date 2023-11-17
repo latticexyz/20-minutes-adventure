@@ -3,8 +3,8 @@ import { useMUD } from "./MUDContext";
 
 export const App = () => {
   const {
-    network: { useStore, tables },
-    systemCalls: { move },
+    network: { useStore, tables, walletClient },
+    systemCalls: { tileAction },
   } = useMUD();
 
   const tiles = useStore((store) => {
@@ -15,5 +15,5 @@ export const App = () => {
     }));
   });
 
-  return <GameMap width={16} height={16} tiles={tiles} onTileClick={move} />;
+  return <GameMap width={16} height={16} tiles={tiles} onTileClick={tileAction} />;
 };

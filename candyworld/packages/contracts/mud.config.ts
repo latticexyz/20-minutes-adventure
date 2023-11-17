@@ -20,5 +20,17 @@ export default mudConfig({
         balance: "uint256",
       },
     },
+    Health: {
+      keySchema: {
+        player: "address",
+      },
+      valueSchema: "uint32",
+    },
+    KillStreak: {
+      keySchema: {
+        player: "address",
+      },
+      valueSchema: "uint32",
+    }
   },
 });

@@ -5,3 +5,5 @@ pragma solidity >=0.8.21;
 
 import { CandyPosition, CandyPositionTableId } from "./tables/CandyPosition.sol";
 import { CandyBalance, CandyBalanceTableId } from "./tables/CandyBalance.sol";
+import { Health, HealthTableId } from "./tables/Health.sol";
+import { KillStreak, KillStreakTableId } from "./tables/KillStreak.sol";

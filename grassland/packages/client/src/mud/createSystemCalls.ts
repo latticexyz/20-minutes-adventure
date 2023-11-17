@@ -10,10 +10,22 @@ export type SystemCalls = ReturnType<typeof createSystemCalls>;
 export function createSystemCalls({
   worldContract,
   waitForTransaction,
+  useStore,
+  tables,
+  walletClient,
 }: SetupNetworkResult) {
-  async function move(x: number, y: number) {
-    const tx = await worldContract.write.grassland_MoveSystem_move([x, y]);
-    await waitForTransaction(tx);
+  async function tileAction(x: number, y: number) {
+    const isSpawned = useStore
+      .getState()
+      .getValue(tables.Spawned, { player: walletClient.account.address })
+    if (isSpawned) {
+      const tx = await worldContract.write.grassland_MoveSystem_move([x, y]);
+      await waitForTransaction(tx);
+    } else {
+      const tx = await worldContract.write.grassland_SpawnSystem_spawn([x, y]);
+      await waitForTransaction(tx);
+    }
   }
-  return { move };
+
+  return { tileAction };
 }
