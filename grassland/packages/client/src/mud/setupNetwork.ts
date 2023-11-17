@@ -4,7 +4,7 @@
  * This line imports the functions we need from it.
  */
 import { createPublicClient, fallback, webSocket, http, createWalletClient, Hex, parseEther, ClientConfig } from "viem";
-import { createFaucetService } from "@latticexyz/services/faucet";
+import { createClient as createFaucetClient } from "@latticexyz/faucet";
 import { syncToZustand } from "@latticexyz/store-sync/zustand";
 import { getNetworkConfig } from "./getNetworkConfig";
 import IWorldAbi from "contracts/out/IWorld.sol/IWorld.abi.json";
@@ -87,17 +87,16 @@ export async function setupNetwork() {
     const address = burnerAccount.address;
     console.info("[Dev Faucet]: Player address -> ", address);
 
-    const faucet = createFaucetService(networkConfig.faucetServiceUrl);
+    const faucet = createFaucetClient({url: networkConfig.faucetServiceUrl});
 
     const requestDrip = async () => {
       const balance = await publicClient.getBalance({ address });
       console.info(`[Dev Faucet]: Player balance -> ${balance}`);
-      const lowBalance = balance < parseEther("1");
+      const lowBalance = balance < parseEther("0.01");
       if (lowBalance) {
         console.info("[Dev Faucet]: Balance is low, dripping funds to player");
         // Double drip
-        await faucet.dripDev({ address });
-        await faucet.dripDev({ address });
+        await faucet.drip.mutate({ address });
       }
     };
 

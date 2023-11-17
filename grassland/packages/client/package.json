@@ -13,6 +13,7 @@
   "dependencies": {
     "@latticexyz/common": "2.0.0-next.14",
     "@latticexyz/dev-tools": "2.0.0-next.14",
+    "@latticexyz/faucet": "2.0.0-next.14",
     "@latticexyz/react": "2.0.0-next.14",
     "@latticexyz/schema-type": "2.0.0-next.14",
     "@latticexyz/services": "2.0.0-next.14",
