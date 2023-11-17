@@ -1,0 +1,211 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/codegen/index.sol",
+    "id": 80434,
+    "exportedSymbols": {
+      "CandyBalance": [
+        81233
+      ],
+      "CandyBalanceTableId": [
+        80490
+      ],
+      "CandyPosition": [
+        82175
+      ],
+      "CandyPositionTableId": [
+        81290
+      ],
+      "Health": [
+        82985
+      ],
+      "HealthTableId": [
+        82242
+      ],
+      "KillStreak": [
+        83785
+      ],
+      "KillStreakTableId": [
+        83042
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:371:141",
+    "nodes": [
+      {
+        "id": 80421,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:141",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 80424,
+        "nodeType": "ImportDirective",
+        "src": "108:81:141",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/CandyPosition.sol",
+        "file": "./tables/CandyPosition.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 80434,
+        "sourceUnit": 82186,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 80422,
+              "name": "CandyPosition",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82175,
+              "src": "117:13:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 80423,
+              "name": "CandyPositionTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 81290,
+              "src": "132:20:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 80427,
+        "nodeType": "ImportDirective",
+        "src": "190:78:141",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/CandyBalance.sol",
+        "file": "./tables/CandyBalance.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 80434,
+        "sourceUnit": 81234,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 80425,
+              "name": "CandyBalance",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 81233,
+              "src": "199:12:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 80426,
+              "name": "CandyBalanceTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 80490,
+              "src": "213:19:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 80430,
+        "nodeType": "ImportDirective",
+        "src": "269:60:141",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Health.sol",
+        "file": "./tables/Health.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 80434,
+        "sourceUnit": 82986,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 80428,
+              "name": "Health",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82985,
+              "src": "278:6:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 80429,
+              "name": "HealthTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82242,
+              "src": "286:13:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 80433,
+        "nodeType": "ImportDirective",
+        "src": "330:72:141",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/KillStreak.sol",
+        "file": "./tables/KillStreak.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 80434,
+        "sourceUnit": 83786,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 80431,
+              "name": "KillStreak",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 83785,
+              "src": "339:10:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 80432,
+              "name": "KillStreakTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 83042,
+              "src": "351:17:141",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 141
+}

@@ -1,0 +1,540 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "ResourceId",
+              "name": "systemId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct SystemCallData[]",
+          "name": "systemCalls",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "batchCall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "returnDatas",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "internalType": "ResourceId",
+              "name": "systemId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct SystemCallFromData[]",
+          "name": "systemCalls",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "batchCallFrom",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "returnDatas",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "batchCall((bytes32,bytes)[])": "ce5e8dd9",
+    "batchCallFrom((address,bytes32,bytes)[])": "8fc8cf7e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"ResourceId\",\"name\":\"systemId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"}],\"internalType\":\"struct SystemCallData[]\",\"name\":\"systemCalls\",\"type\":\"tuple[]\"}],\"name\":\"batchCall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"returnDatas\",\"type\":\"bytes[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"ResourceId\",\"name\":\"systemId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"}],\"internalType\":\"struct SystemCallFromData[]\",\"name\":\"systemCalls\",\"type\":\"tuple[]\"}],\"name\":\"batchCallFrom\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"returnDatas\",\"type\":\"bytes[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IBatchCallSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol\":\"IBatchCallSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"node_modules/@latticexyz/store/src/ResourceId.sol\":{\"keccak256\":\"0x40983c580b8958e55db4520095934a535e98544ffe8228327e598973eb6647ed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://839d658fa2bb2b1f09a08149d2bf0c26a26c301ad2dda8154fc99458085a695d\",\"dweb:/ipfs/Qmd5jHHYrgqraPqF8bjzT4xyjsoPk8K7pkxXLLfz6MRT6d\"]},\"node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol\":{\"keccak256\":\"0xb4d323470e22b1d3f0168a44196eb09466f602b7564c75e5739c5f53a5036f97\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://acad752208d00b731baaa1cfa192ff3981001fd030953bdc604e4f69ec2cd0b8\",\"dweb:/ipfs/QmRFw3RgmX2CHqg7PqsP3rqVKxBVYNq5hHcFiyA2Y7iAaX\"]},\"node_modules/@latticexyz/world/src/modules/core/types.sol\":{\"keccak256\":\"0x256b3269e1e7eb6c8b6e26432bbe6799b4d45a88ef1b0e795ea71e604cec3a8a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://99bf6320ce9671ed74e7352b4e6c462d741ca9a894c48b526e7d8513308fa6b3\",\"dweb:/ipfs/QmRFJcWFMDRkg7soJ4r4MrqacKmj16vUEMFEGWJuvFi4vJ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct SystemCallData[]",
+              "name": "systemCalls",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "ResourceId",
+                  "name": "systemId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "callData",
+                  "type": "bytes"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "batchCall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "returnDatas",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct SystemCallFromData[]",
+              "name": "systemCalls",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "from",
+                  "type": "address"
+                },
+                {
+                  "internalType": "ResourceId",
+                  "name": "systemId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "callData",
+                  "type": "bytes"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "batchCallFrom",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "returnDatas",
+              "type": "bytes[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol": "IBatchCallSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@latticexyz/store/src/ResourceId.sol": {
+        "keccak256": "0x40983c580b8958e55db4520095934a535e98544ffe8228327e598973eb6647ed",
+        "urls": [
+          "bzz-raw://839d658fa2bb2b1f09a08149d2bf0c26a26c301ad2dda8154fc99458085a695d",
+          "dweb:/ipfs/Qmd5jHHYrgqraPqF8bjzT4xyjsoPk8K7pkxXLLfz6MRT6d"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol": {
+        "keccak256": "0xb4d323470e22b1d3f0168a44196eb09466f602b7564c75e5739c5f53a5036f97",
+        "urls": [
+          "bzz-raw://acad752208d00b731baaa1cfa192ff3981001fd030953bdc604e4f69ec2cd0b8",
+          "dweb:/ipfs/QmRFw3RgmX2CHqg7PqsP3rqVKxBVYNq5hHcFiyA2Y7iAaX"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@latticexyz/world/src/modules/core/types.sol": {
+        "keccak256": "0x256b3269e1e7eb6c8b6e26432bbe6799b4d45a88ef1b0e795ea71e604cec3a8a",
+        "urls": [
+          "bzz-raw://99bf6320ce9671ed74e7352b4e6c462d741ca9a894c48b526e7d8513308fa6b3",
+          "dweb:/ipfs/QmRFJcWFMDRkg7soJ4r4MrqacKmj16vUEMFEGWJuvFi4vJ"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol",
+    "id": 75138,
+    "exportedSymbols": {
+      "IBatchCallSystem": [
+        75137
+      ],
+      "SystemCallData": [
+        110643
+      ],
+      "SystemCallFromData": [
+        110655
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:563:109",
+    "nodes": [
+      {
+        "id": 75112,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:109",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 75115,
+        "nodeType": "ImportDirective",
+        "src": "108:84:109",
+        "nodes": [],
+        "absolutePath": "node_modules/@latticexyz/world/src/modules/core/types.sol",
+        "file": "./../../modules/core/types.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 75138,
+        "sourceUnit": 110656,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 75113,
+              "name": "SystemCallData",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 110643,
+              "src": "117:14:109",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 75114,
+              "name": "SystemCallFromData",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 110655,
+              "src": "133:18:109",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 75137,
+        "nodeType": "ContractDefinition",
+        "src": "341:253:109",
+        "nodes": [
+          {
+            "id": 75126,
+            "nodeType": "FunctionDefinition",
+            "src": "372:104:109",
+            "nodes": [],
+            "functionSelector": "ce5e8dd9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "batchCall",
+            "nameLocation": "381:9:109",
+            "parameters": {
+              "id": 75121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75120,
+                  "mutability": "mutable",
+                  "name": "systemCalls",
+                  "nameLocation": "417:11:109",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 75126,
+                  "src": "391:37:109",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_SystemCallData_$110643_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "struct SystemCallData[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 75118,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 75117,
+                        "name": "SystemCallData",
+                        "nameLocations": [
+                          "391:14:109"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 110643,
+                        "src": "391:14:109"
+                      },
+                      "referencedDeclaration": 110643,
+                      "src": "391:14:109",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_SystemCallData_$110643_storage_ptr",
+                        "typeString": "struct SystemCallData"
+                      }
+                    },
+                    "id": 75119,
+                    "nodeType": "ArrayTypeName",
+                    "src": "391:16:109",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_SystemCallData_$110643_storage_$dyn_storage_ptr",
+                      "typeString": "struct SystemCallData[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:39:109"
+            },
+            "returnParameters": {
+              "id": 75125,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75124,
+                  "mutability": "mutable",
+                  "name": "returnDatas",
+                  "nameLocation": "463:11:109",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 75126,
+                  "src": "448:26:109",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 75122,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "448:5:109",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 75123,
+                    "nodeType": "ArrayTypeName",
+                    "src": "448:7:109",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "447:28:109"
+            },
+            "scope": 75137,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 75136,
+            "nodeType": "FunctionDefinition",
+            "src": "480:112:109",
+            "nodes": [],
+            "functionSelector": "8fc8cf7e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "batchCallFrom",
+            "nameLocation": "489:13:109",
+            "parameters": {
+              "id": 75131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75130,
+                  "mutability": "mutable",
+                  "name": "systemCalls",
+                  "nameLocation": "533:11:109",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 75136,
+                  "src": "503:41:109",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_SystemCallFromData_$110655_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "struct SystemCallFromData[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 75128,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 75127,
+                        "name": "SystemCallFromData",
+                        "nameLocations": [
+                          "503:18:109"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 110655,
+                        "src": "503:18:109"
+                      },
+                      "referencedDeclaration": 110655,
+                      "src": "503:18:109",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_SystemCallFromData_$110655_storage_ptr",
+                        "typeString": "struct SystemCallFromData"
+                      }
+                    },
+                    "id": 75129,
+                    "nodeType": "ArrayTypeName",
+                    "src": "503:20:109",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_SystemCallFromData_$110655_storage_$dyn_storage_ptr",
+                      "typeString": "struct SystemCallFromData[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:43:109"
+            },
+            "returnParameters": {
+              "id": 75135,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75134,
+                  "mutability": "mutable",
+                  "name": "returnDatas",
+                  "nameLocation": "579:11:109",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 75136,
+                  "src": "564:26:109",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 75132,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "564:5:109",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 75133,
+                    "nodeType": "ArrayTypeName",
+                    "src": "564:7:109",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:28:109"
+            },
+            "scope": 75137,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBatchCallSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 75116,
+          "nodeType": "StructuredDocumentation",
+          "src": "194:146:109",
+          "text": " @title IBatchCallSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          75137
+        ],
+        "name": "IBatchCallSystem",
+        "nameLocation": "351:16:109",
+        "scope": 75138,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 109
+}

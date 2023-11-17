@@ -1,0 +1,162 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "grassland_ExampleSystem_foo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "grassland_ExampleSystem_foo()": "5c3c7da6"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"grassland_ExampleSystem_foo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IExampleSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IExampleSystem.sol\":\"IExampleSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IExampleSystem.sol\":{\"keccak256\":\"0x538bb9f8d9fab8c9e07f6edeead289d6416516c73fd9e25d476f81f72425a4a0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://806f1e8ba08ae6cae2e8e4ab3be87d893811d5469982552dceadd0911694336c\",\"dweb:/ipfs/QmUKckjjs1V7TK5o6X7LPeUtgemmRH5j81cSfGixSk2UBL\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "grassland_ExampleSystem_foo"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IExampleSystem.sol": "IExampleSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IExampleSystem.sol": {
+        "keccak256": "0x538bb9f8d9fab8c9e07f6edeead289d6416516c73fd9e25d476f81f72425a4a0",
+        "urls": [
+          "bzz-raw://806f1e8ba08ae6cae2e8e4ab3be87d893811d5469982552dceadd0911694336c",
+          "dweb:/ipfs/QmUKckjjs1V7TK5o6X7LPeUtgemmRH5j81cSfGixSk2UBL"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IExampleSystem.sol",
+    "id": 70750,
+    "exportedSymbols": {
+      "IExampleSystem": [
+        70749
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:301:133",
+    "nodes": [
+      {
+        "id": 70744,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:133",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 70749,
+        "nodeType": "ContractDefinition",
+        "src": "253:79:133",
+        "nodes": [
+          {
+            "id": 70748,
+            "nodeType": "FunctionDefinition",
+            "src": "282:48:133",
+            "nodes": [],
+            "functionSelector": "5c3c7da6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "grassland_ExampleSystem_foo",
+            "nameLocation": "291:27:133",
+            "parameters": {
+              "id": 70746,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:2:133"
+            },
+            "returnParameters": {
+              "id": 70747,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "329:0:133"
+            },
+            "scope": 70749,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IExampleSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 70745,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:144:133",
+          "text": " @title IExampleSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          70749
+        ],
+        "name": "IExampleSystem",
+        "nameLocation": "263:14:133",
+        "scope": 70750,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 133
+}

@@ -1,0 +1,204 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "defender",
+          "type": "address"
+        }
+      ],
+      "name": "candyworld_AttackSystem_attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "candyworld_AttackSystem_attack(address)": "1ae2b543"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"defender\",\"type\":\"address\"}],\"name\":\"candyworld_AttackSystem_attack\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IAttackSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IAttackSystem.sol\":\"IAttackSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@grassland/=node_modules/@grassland/packages/contracts/\",\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IAttackSystem.sol\":{\"keccak256\":\"0x0b7d4e56fd00707486e43fcf4ad44087ff393bbfd6ea8e38ff7e4d6218c9b0ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b217cb9c62ecd5b85294cfeb0c84af5ff0ffce604b724ac3d4875d85034475af\",\"dweb:/ipfs/QmSH6MeVCzGY7UxYoGiC9mNj7AuxysrxXQQqLj82PmnrdL\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "defender",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "candyworld_AttackSystem_attack"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@grassland/=node_modules/@grassland/packages/contracts/",
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IAttackSystem.sol": "IAttackSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IAttackSystem.sol": {
+        "keccak256": "0x0b7d4e56fd00707486e43fcf4ad44087ff393bbfd6ea8e38ff7e4d6218c9b0ab",
+        "urls": [
+          "bzz-raw://b217cb9c62ecd5b85294cfeb0c84af5ff0ffce604b724ac3d4875d85034475af",
+          "dweb:/ipfs/QmSH6MeVCzGY7UxYoGiC9mNj7AuxysrxXQQqLj82PmnrdL"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IAttackSystem.sol",
+    "id": 83795,
+    "exportedSymbols": {
+      "IAttackSystem": [
+        83794
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:318:146",
+    "nodes": [
+      {
+        "id": 83787,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:146",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 83794,
+        "nodeType": "ContractDefinition",
+        "src": "252:97:146",
+        "nodes": [
+          {
+            "id": 83793,
+            "nodeType": "FunctionDefinition",
+            "src": "280:67:146",
+            "nodes": [],
+            "functionSelector": "1ae2b543",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "candyworld_AttackSystem_attack",
+            "nameLocation": "289:30:146",
+            "parameters": {
+              "id": 83791,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 83790,
+                  "mutability": "mutable",
+                  "name": "defender",
+                  "nameLocation": "328:8:146",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83793,
+                  "src": "320:16:146",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 83789,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:146",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "319:18:146"
+            },
+            "returnParameters": {
+              "id": 83792,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "346:0:146"
+            },
+            "scope": 83794,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAttackSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 83788,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:143:146",
+          "text": " @title IAttackSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          83794
+        ],
+        "name": "IAttackSystem",
+        "nameLocation": "262:13:146",
+        "scope": 83795,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 146
+}

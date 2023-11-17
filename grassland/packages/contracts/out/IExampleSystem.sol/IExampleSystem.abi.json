@@ -1,0 +1,9 @@
+[
+  {
+    "inputs": [],
+    "name": "grassland_ExampleSystem_foo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

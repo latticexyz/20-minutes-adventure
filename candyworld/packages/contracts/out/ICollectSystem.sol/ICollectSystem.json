@@ -1,0 +1,240 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "x",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "y",
+          "type": "uint32"
+        }
+      ],
+      "name": "candyworld_CollectSystem_collect",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "candyworld_CollectSystem_collect(uint32,uint32)": "de5f2301"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"x\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"y\",\"type\":\"uint32\"}],\"name\":\"candyworld_CollectSystem_collect\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"ICollectSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/ICollectSystem.sol\":\"ICollectSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@grassland/=node_modules/@grassland/packages/contracts/\",\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/ICollectSystem.sol\":{\"keccak256\":\"0x7c35ee0411710089e501a3cb23dfcb96f478d0a98891c2fab0107863b2611248\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c2bda7e85627aaf8479eebdfec0b671829861942be64e5aa36e6fd3e438e505f\",\"dweb:/ipfs/QmZN3iUaeugwmHm4QhgVcjJJvn99F6ByWJTAjLzM6H8Y8o\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "x",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "y",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "candyworld_CollectSystem_collect"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@grassland/=node_modules/@grassland/packages/contracts/",
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/ICollectSystem.sol": "ICollectSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/ICollectSystem.sol": {
+        "keccak256": "0x7c35ee0411710089e501a3cb23dfcb96f478d0a98891c2fab0107863b2611248",
+        "urls": [
+          "bzz-raw://c2bda7e85627aaf8479eebdfec0b671829861942be64e5aa36e6fd3e438e505f",
+          "dweb:/ipfs/QmZN3iUaeugwmHm4QhgVcjJJvn99F6ByWJTAjLzM6H8Y8o"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/ICollectSystem.sol",
+    "id": 79550,
+    "exportedSymbols": {
+      "ICollectSystem": [
+        79549
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:324:138",
+    "nodes": [
+      {
+        "id": 79540,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:138",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 79549,
+        "nodeType": "ContractDefinition",
+        "src": "253:102:138",
+        "nodes": [
+          {
+            "id": 79548,
+            "nodeType": "FunctionDefinition",
+            "src": "282:71:138",
+            "nodes": [],
+            "functionSelector": "de5f2301",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "candyworld_CollectSystem_collect",
+            "nameLocation": "291:32:138",
+            "parameters": {
+              "id": 79546,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 79543,
+                  "mutability": "mutable",
+                  "name": "x",
+                  "nameLocation": "331:1:138",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 79548,
+                  "src": "324:8:138",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 79542,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:6:138",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 79545,
+                  "mutability": "mutable",
+                  "name": "y",
+                  "nameLocation": "341:1:138",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 79548,
+                  "src": "334:8:138",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 79544,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "334:6:138",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:20:138"
+            },
+            "returnParameters": {
+              "id": 79547,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "352:0:138"
+            },
+            "scope": 79549,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICollectSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 79541,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:144:138",
+          "text": " @title ICollectSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          79549
+        ],
+        "name": "ICollectSystem",
+        "nameLocation": "263:14:138",
+        "scope": 79550,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 138
+}

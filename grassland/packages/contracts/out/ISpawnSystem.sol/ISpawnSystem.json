@@ -1,0 +1,239 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "x",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "y",
+          "type": "uint32"
+        }
+      ],
+      "name": "grassland_SpawnSystem_spawn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "grassland_SpawnSystem_spawn(uint32,uint32)": "74cc1b9f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"x\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"y\",\"type\":\"uint32\"}],\"name\":\"grassland_SpawnSystem_spawn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"ISpawnSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/ISpawnSystem.sol\":\"ISpawnSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/ISpawnSystem.sol\":{\"keccak256\":\"0x0030050b4d0a688555bc47af3063b1d65030123e017363fbdd4898cf626b557d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c7bb7f02ba388c13543925790b66298ea1a748dbde93f4f352ca811191a789c\",\"dweb:/ipfs/QmQE6rwAFeFiNFvGave88FNKD3ReZRTisq4DPPqfJ9CmN9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "x",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "y",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "grassland_SpawnSystem_spawn"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/ISpawnSystem.sol": "ISpawnSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/ISpawnSystem.sol": {
+        "keccak256": "0x0030050b4d0a688555bc47af3063b1d65030123e017363fbdd4898cf626b557d",
+        "urls": [
+          "bzz-raw://8c7bb7f02ba388c13543925790b66298ea1a748dbde93f4f352ca811191a789c",
+          "dweb:/ipfs/QmQE6rwAFeFiNFvGave88FNKD3ReZRTisq4DPPqfJ9CmN9"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/ISpawnSystem.sol",
+    "id": 80336,
+    "exportedSymbols": {
+      "ISpawnSystem": [
+        80335
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:315:138",
+    "nodes": [
+      {
+        "id": 80326,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:138",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 80335,
+        "nodeType": "ContractDefinition",
+        "src": "251:95:138",
+        "nodes": [
+          {
+            "id": 80334,
+            "nodeType": "FunctionDefinition",
+            "src": "278:66:138",
+            "nodes": [],
+            "functionSelector": "74cc1b9f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "grassland_SpawnSystem_spawn",
+            "nameLocation": "287:27:138",
+            "parameters": {
+              "id": 80332,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 80329,
+                  "mutability": "mutable",
+                  "name": "x",
+                  "nameLocation": "322:1:138",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80334,
+                  "src": "315:8:138",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80328,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "315:6:138",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 80331,
+                  "mutability": "mutable",
+                  "name": "y",
+                  "nameLocation": "332:1:138",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80334,
+                  "src": "325:8:138",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80330,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "325:6:138",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "314:20:138"
+            },
+            "returnParameters": {
+              "id": 80333,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "343:0:138"
+            },
+            "scope": 80335,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISpawnSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 80327,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:142:138",
+          "text": " @title ISpawnSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          80335
+        ],
+        "name": "ISpawnSystem",
+        "nameLocation": "261:12:138",
+        "scope": 80336,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 138
+}

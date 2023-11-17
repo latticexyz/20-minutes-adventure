@@ -1,0 +1,163 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "candyworld_ExampleSystem_bar",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "candyworld_ExampleSystem_bar()": "dc966243"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"candyworld_ExampleSystem_bar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IExampleSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IExampleSystem.sol\":\"IExampleSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@grassland/=node_modules/@grassland/packages/contracts/\",\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IExampleSystem.sol\":{\"keccak256\":\"0x2289989ab419f940c62d5eb0f3c1258974197487d27eed0a5a1ed85070d29e68\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://387b65e70d5d340527c52e8fa10d4863923caa554b81e813946aec2582ce66a9\",\"dweb:/ipfs/QmdX9cHTCbt7snTkoEUTo9MeVemtdZjdEtonjL7E3SLChp\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "candyworld_ExampleSystem_bar"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@grassland/=node_modules/@grassland/packages/contracts/",
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IExampleSystem.sol": "IExampleSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IExampleSystem.sol": {
+        "keccak256": "0x2289989ab419f940c62d5eb0f3c1258974197487d27eed0a5a1ed85070d29e68",
+        "urls": [
+          "bzz-raw://387b65e70d5d340527c52e8fa10d4863923caa554b81e813946aec2582ce66a9",
+          "dweb:/ipfs/QmdX9cHTCbt7snTkoEUTo9MeVemtdZjdEtonjL7E3SLChp"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IExampleSystem.sol",
+    "id": 70750,
+    "exportedSymbols": {
+      "IExampleSystem": [
+        70749
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:302:133",
+    "nodes": [
+      {
+        "id": 70744,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:133",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 70749,
+        "nodeType": "ContractDefinition",
+        "src": "253:80:133",
+        "nodes": [
+          {
+            "id": 70748,
+            "nodeType": "FunctionDefinition",
+            "src": "282:49:133",
+            "nodes": [],
+            "functionSelector": "dc966243",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "candyworld_ExampleSystem_bar",
+            "nameLocation": "291:28:133",
+            "parameters": {
+              "id": 70746,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "319:2:133"
+            },
+            "returnParameters": {
+              "id": 70747,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "330:0:133"
+            },
+            "scope": 70749,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IExampleSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 70745,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:144:133",
+          "text": " @title IExampleSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          70749
+        ],
+        "name": "IExampleSystem",
+        "nameLocation": "263:14:133",
+        "scope": 70750,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 133
+}

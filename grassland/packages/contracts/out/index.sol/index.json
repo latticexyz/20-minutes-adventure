@@ -1,0 +1,94 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/codegen/index.sol",
+    "id": 77319,
+    "exportedSymbols": {
+      "Position": [
+        78563
+      ],
+      "PositionData": [
+        77387
+      ],
+      "PositionTableId": [
+        77375
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:157:133",
+    "nodes": [
+      {
+        "id": 77314,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:133",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 77318,
+        "nodeType": "ImportDirective",
+        "src": "108:80:133",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Position.sol",
+        "file": "./tables/Position.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 77319,
+        "sourceUnit": 78564,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 77315,
+              "name": "Position",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 78563,
+              "src": "117:8:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77316,
+              "name": "PositionData",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 77387,
+              "src": "127:12:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77317,
+              "name": "PositionTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 77375,
+              "src": "141:15:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 133
+}
