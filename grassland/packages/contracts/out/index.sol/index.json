@@ -1,0 +1,182 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/codegen/index.sol",
+    "id": 77299,
+    "exportedSymbols": {
+      "Obstruction": [
+        78240
+      ],
+      "ObstructionTableId": [
+        77355
+      ],
+      "Position": [
+        79495
+      ],
+      "PositionData": [
+        78319
+      ],
+      "PositionTableId": [
+        78307
+      ],
+      "Spawned": [
+        80303
+      ],
+      "SpawnedTableId": [
+        79552
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:297:133",
+    "nodes": [
+      {
+        "id": 77288,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:133",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 77291,
+        "nodeType": "ImportDirective",
+        "src": "108:63:133",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Spawned.sol",
+        "file": "./tables/Spawned.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 77299,
+        "sourceUnit": 80314,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 77289,
+              "name": "Spawned",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 80303,
+              "src": "117:7:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77290,
+              "name": "SpawnedTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 79552,
+              "src": "126:14:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 77295,
+        "nodeType": "ImportDirective",
+        "src": "172:80:133",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Position.sol",
+        "file": "./tables/Position.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 77299,
+        "sourceUnit": 79496,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 77292,
+              "name": "Position",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 79495,
+              "src": "181:8:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77293,
+              "name": "PositionData",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 78319,
+              "src": "191:12:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77294,
+              "name": "PositionTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 78307,
+              "src": "205:15:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 77298,
+        "nodeType": "ImportDirective",
+        "src": "253:75:133",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Obstruction.sol",
+        "file": "./tables/Obstruction.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 77299,
+        "sourceUnit": 78251,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 77296,
+              "name": "Obstruction",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 78240,
+              "src": "262:11:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 77297,
+              "name": "ObstructionTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 77355,
+              "src": "275:18:133",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 133
+}

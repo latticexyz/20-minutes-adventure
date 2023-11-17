@@ -1,0 +1,239 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "x",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "y",
+          "type": "uint32"
+        }
+      ],
+      "name": "grassland_MoveSystem_move",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "grassland_MoveSystem_move(uint32,uint32)": "12db5179"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"x\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"y\",\"type\":\"uint32\"}],\"name\":\"grassland_MoveSystem_move\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IMoveSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IMoveSystem.sol\":\"IMoveSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IMoveSystem.sol\":{\"keccak256\":\"0x86d1ba5ffe4bf82838bdc8a30cc60c4263134db5f0605142f77f98c61e2ad87f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://915174bec91efed0b43d2864d3f9e9f284e7df9180ca5c4e6cfadfcfb7ab1ccb\",\"dweb:/ipfs/QmaawRbtoLTS6C1KM49zKSBeudnoXQEHVEspfdswaK2FWA\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "x",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "y",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "grassland_MoveSystem_move"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IMoveSystem.sol": "IMoveSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IMoveSystem.sol": {
+        "keccak256": "0x86d1ba5ffe4bf82838bdc8a30cc60c4263134db5f0605142f77f98c61e2ad87f",
+        "urls": [
+          "bzz-raw://915174bec91efed0b43d2864d3f9e9f284e7df9180ca5c4e6cfadfcfb7ab1ccb",
+          "dweb:/ipfs/QmaawRbtoLTS6C1KM49zKSBeudnoXQEHVEspfdswaK2FWA"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IMoveSystem.sol",
+    "id": 80325,
+    "exportedSymbols": {
+      "IMoveSystem": [
+        80324
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:311:137",
+    "nodes": [
+      {
+        "id": 80315,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:137",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 80324,
+        "nodeType": "ContractDefinition",
+        "src": "250:92:137",
+        "nodes": [
+          {
+            "id": 80323,
+            "nodeType": "FunctionDefinition",
+            "src": "276:64:137",
+            "nodes": [],
+            "functionSelector": "12db5179",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "grassland_MoveSystem_move",
+            "nameLocation": "285:25:137",
+            "parameters": {
+              "id": 80321,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 80318,
+                  "mutability": "mutable",
+                  "name": "x",
+                  "nameLocation": "318:1:137",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80323,
+                  "src": "311:8:137",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80317,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "311:6:137",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 80320,
+                  "mutability": "mutable",
+                  "name": "y",
+                  "nameLocation": "328:1:137",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80323,
+                  "src": "321:8:137",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80319,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:6:137",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "310:20:137"
+            },
+            "returnParameters": {
+              "id": 80322,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "339:0:137"
+            },
+            "scope": 80324,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IMoveSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 80316,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:141:137",
+          "text": " @title IMoveSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          80324
+        ],
+        "name": "IMoveSystem",
+        "nameLocation": "260:11:137",
+        "scope": 80325,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 137
+}

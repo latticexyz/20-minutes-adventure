@@ -1,0 +1,610 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/positionUtils.sol",
+    "id": 80398,
+    "exportedSymbols": {
+      "distance": [
+        80397
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:266:140",
+    "nodes": [
+      {
+        "id": 80353,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:140",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 80397,
+        "nodeType": "FunctionDefinition",
+        "src": "59:239:140",
+        "nodes": [],
+        "body": {
+          "id": 80396,
+          "nodeType": "Block",
+          "src": "151:147:140",
+          "nodes": [],
+          "statements": [
+            {
+              "assignments": [
+                80367
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 80367,
+                  "mutability": "mutable",
+                  "name": "deltaX",
+                  "nameLocation": "162:6:140",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80396,
+                  "src": "155:13:140",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80366,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:6:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 80378,
+              "initialValue": {
+                "condition": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80370,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80368,
+                    "name": "fromX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80355,
+                    "src": "171:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": ">",
+                  "rightExpression": {
+                    "id": 80369,
+                    "name": "toX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80359,
+                    "src": "179:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "171:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "falseExpression": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80376,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80374,
+                    "name": "toX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80359,
+                    "src": "199:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "-",
+                  "rightExpression": {
+                    "id": 80375,
+                    "name": "fromX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80355,
+                    "src": "205:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "199:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "id": 80377,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "nodeType": "Conditional",
+                "src": "171:39:140",
+                "trueExpression": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80373,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80371,
+                    "name": "fromX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80355,
+                    "src": "185:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "-",
+                  "rightExpression": {
+                    "id": 80372,
+                    "name": "toX",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80359,
+                    "src": "193:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "185:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "155:55:140"
+            },
+            {
+              "assignments": [
+                80380
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 80380,
+                  "mutability": "mutable",
+                  "name": "deltaY",
+                  "nameLocation": "221:6:140",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80396,
+                  "src": "214:13:140",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 80379,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "214:6:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 80391,
+              "initialValue": {
+                "condition": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80383,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80381,
+                    "name": "fromY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80357,
+                    "src": "230:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": ">",
+                  "rightExpression": {
+                    "id": 80382,
+                    "name": "toY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80361,
+                    "src": "238:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "230:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "falseExpression": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80389,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80387,
+                    "name": "toY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80361,
+                    "src": "258:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "-",
+                  "rightExpression": {
+                    "id": 80388,
+                    "name": "fromY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80357,
+                    "src": "264:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "258:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "id": 80390,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "nodeType": "Conditional",
+                "src": "230:39:140",
+                "trueExpression": {
+                  "commonType": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "id": 80386,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression": {
+                    "id": 80384,
+                    "name": "fromY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80357,
+                    "src": "244:5:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "-",
+                  "rightExpression": {
+                    "id": 80385,
+                    "name": "toY",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 80361,
+                    "src": "252:3:140",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "src": "244:11:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "214:55:140"
+            },
+            {
+              "expression": {
+                "commonType": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "id": 80394,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "leftExpression": {
+                  "id": 80392,
+                  "name": "deltaX",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 80367,
+                  "src": "280:6:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "nodeType": "BinaryOperation",
+                "operator": "+",
+                "rightExpression": {
+                  "id": 80393,
+                  "name": "deltaY",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 80380,
+                  "src": "289:6:140",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "src": "280:15:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "functionReturnParameters": 80365,
+              "id": 80395,
+              "nodeType": "Return",
+              "src": "273:22:140"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "distance",
+        "nameLocation": "68:8:140",
+        "parameters": {
+          "id": 80362,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 80355,
+              "mutability": "mutable",
+              "name": "fromX",
+              "nameLocation": "84:5:140",
+              "nodeType": "VariableDeclaration",
+              "scope": 80397,
+              "src": "77:12:140",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              },
+              "typeName": {
+                "id": 80354,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "77:6:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 80357,
+              "mutability": "mutable",
+              "name": "fromY",
+              "nameLocation": "98:5:140",
+              "nodeType": "VariableDeclaration",
+              "scope": 80397,
+              "src": "91:12:140",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              },
+              "typeName": {
+                "id": 80356,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "91:6:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 80359,
+              "mutability": "mutable",
+              "name": "toX",
+              "nameLocation": "112:3:140",
+              "nodeType": "VariableDeclaration",
+              "scope": 80397,
+              "src": "105:10:140",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              },
+              "typeName": {
+                "id": 80358,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "105:6:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 80361,
+              "mutability": "mutable",
+              "name": "toY",
+              "nameLocation": "124:3:140",
+              "nodeType": "VariableDeclaration",
+              "scope": 80397,
+              "src": "117:10:140",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              },
+              "typeName": {
+                "id": 80360,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "117:6:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "76:52:140"
+        },
+        "returnParameters": {
+          "id": 80365,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 80364,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 80397,
+              "src": "143:6:140",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              },
+              "typeName": {
+                "id": 80363,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "143:6:140",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "142:8:140"
+        },
+        "scope": 80398,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 140
+}
