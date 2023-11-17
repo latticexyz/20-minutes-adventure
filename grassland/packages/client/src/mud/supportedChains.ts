@@ -34,7 +34,7 @@ export const redstoneTestnet = {
       url: "https://explorer.holesky.redstone.xyz",
     },
   },
-  faucetUrl: "https://17001-faucet.quarry.linfra.xyz",
+  faucetUrl: "https://17001-faucet.quarry.linfra.xyz/trpc",
 } as const satisfies MUDChain;
 
 /*
